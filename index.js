@@ -21,3 +21,8 @@ const getMode = (array) => {
 	const mode = Object.keys(counts).filter((el) => counts[el] === counts[highest]);
 	return mode.join(', ');
 };
+
+// Get Range
+const getRange = (array) => {
+	return Math.max(...array) - Math.min(...array);
+};
